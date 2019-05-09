@@ -1,0 +1,158 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+
+@import "ui-variables";
+@import "less/fontawesome.less";
+
+.raul-bookmarks {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.icon-refresh {
+  float: right;
+  font-size: 20px;
+  padding-top: 4px;
+  padding-right: 8px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding-left: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  max-width: 315px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 1em;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  margin-top: 1em;
+  display: none;
+  overflow: hidden;
+}
+
+.campos label {
+  width: -webkit-fill-available;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.boxsize {
+  height: 2.5em;
+  width: 100%;
+  max-width: 315px;
+  border-radius: 1em;
+  border-width: inherit;
+  margin-bottom: 0.5em;
+}
+
+#form-add input, #form-add-folder input {
+  color: #000;
+  padding-left: 1em;
+}
+
+select {
+  color: #000;
+  padding-left: 1em;
+}
+
+.custom-select {
+  height: 2.5em;
+  width: 100%;
+  max-width: 315px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.btn-form-folder {
+  margin-top: 1em;
+}
+
+.btn-add {
+  height: 2.2em;
+  color: #000;
+  width: 100%;
+  max-width: 315px;
+  margin-top: 0.5em;
+  border-radius: 1em;
+  font-size: 1.2em;
+}
+
+#container .collapsible {
+  margin-right: 10px;
+}
+
+#container .collapsible:last-child {
+  margin-right: 0px;
+}
+
+#btns-creados {
+  overflow-y: auto;
+}
+
+.btns-creados {
+  color: white;
+  font-size: 1.2em;
+  width: 100%;
+  max-width: 305px;
+  text-align: left;
+  padding-left: 18px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: none;
+  display: inline-block;
+  background-color: #777;
+}
+
+@media (min-width: 650px) {
+  #btns-creados button {
+    margin-right: 10px;
+  }
+}
+
+.btns-creados:hover {
+  background-color: #555;
+}
+
+#btns-creados .collapsible {
+  padding-left: 18px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #9a875a;
+}
+
+#btns-creados .content {
+  margin-top: 0em;
+  margin-left: 10px;
+}
+
+#btns-creados .active, #btns-creados .collapsible:hover {
+  background-color: #675c42;
+}
+
+.icons-folders {
+  float: left;
+  padding-top: 4px;
+  padding-right: 8px;
+}

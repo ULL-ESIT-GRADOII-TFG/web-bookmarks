@@ -1,0 +1,25 @@
+{
+  "name": "raul-bookmarks",
+  "main": "./lib/raul-bookmarks",
+  "version": "0.0.0",
+  "description": "This package allows you to create web bookmarks and organize them by folders and open those bookmarks directly in your default browser",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "raul-bookmarks:toggle"
+  },
+  "deserializers": {
+    "raul-bookmarks/RaulBookmarksView": "deserializeRaulBookmarksView"
+  },
+  "repository": "https://github.com/atom/raul-bookmarks",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.4.0",
+    "jsonpatch": "^3.0.1",
+    "path": "^0.12.7"
+  }
+}

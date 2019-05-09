@@ -1,0 +1,39 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "raul-bookmarks",
+        "submenu": [
+          {
+            "label": "Toggle",
+            "command": "raul-bookmarks:toggle"
+          },
+          {
+            "label": "Edit/Delete Bookmarks",
+            "command": "raul-bookmarks:edit-bookmarks"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "raul-bookmarks",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "raul-bookmarks:toggle"
+            },
+            {
+              "label": "Edit/Delete Bookmarks",
+              "command": "raul-bookmarks:edit-bookmarks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

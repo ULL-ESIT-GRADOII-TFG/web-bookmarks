@@ -5,10 +5,10 @@
   "description": "This package allows you to create web bookmarks and organize them by folders and open those bookmarks directly in your default browser",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "raul-bookmarks:toggle"
+    "atom-workspace": "web-bookmarks:toggle"
   },
   "deserializers": {
-    "raul-bookmarks/RaulBookmarksView": "deserializeRaulBookmarksView"
+    "web-bookmarks/WebBookmarksView": "deserializeWebBookmarksView"
   },
   "repository": "https://github.com/ULL-ESIT-GRADOII-TFG/web-bookmarks.git",
   "license": "MIT",

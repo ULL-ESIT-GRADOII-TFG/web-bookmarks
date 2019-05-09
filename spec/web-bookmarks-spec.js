@@ -1,44 +1,44 @@
 'use babel';
 
-import RaulBookmarks from '../lib/raul-bookmarks';
+import WebBookmarks from '../lib/web-bookmarks';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('RaulBookmarks', () => {
+describe('WebBookmarks', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('raul-bookmarks');
+    activationPromise = atom.packages.activatePackage('web-bookmarks');
   });
 
-  describe('when the raul-bookmarks:toggle event is triggered', () => {
+  describe('when the web-bookmarks:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.raul-bookmarks')).not.toExist();
+      expect(workspaceElement.querySelector('.web-bookmarks')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'raul-bookmarks:toggle');
+      atom.commands.dispatch(workspaceElement, 'web-bookmarks:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.raul-bookmarks')).toExist();
+        expect(workspaceElement.querySelector('.web-bookmarks')).toExist();
 
-        let raulBookmarksElement = workspaceElement.querySelector('.raul-bookmarks');
-        expect(raulBookmarksElement).toExist();
+        let webBookmarksElement = workspaceElement.querySelector('.web-bookmarks');
+        expect(webBookmarksElement).toExist();
 
-        let raulBookmarksPanel = atom.workspace.panelForItem(raulBookmarksElement);
-        expect(raulBookmarksPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'raul-bookmarks:toggle');
-        expect(raulBookmarksPanel.isVisible()).toBe(false);
+        let webBookmarksPanel = atom.workspace.panelForItem(webBookmarksElement);
+        expect(webBookmarksPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'web-bookmarks:toggle');
+        expect(webBookmarksPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('RaulBookmarks', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.raul-bookmarks')).not.toExist();
+      expect(workspaceElement.querySelector('.web-bookmarks')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'raul-bookmarks:toggle');
+      atom.commands.dispatch(workspaceElement, 'web-bookmarks:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('RaulBookmarks', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let raulBookmarksElement = workspaceElement.querySelector('.raul-bookmarks');
-        expect(raulBookmarksElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'raul-bookmarks:toggle');
-        expect(raulBookmarksElement).not.toBeVisible();
+        let webBookmarksElement = workspaceElement.querySelector('.web-bookmarks');
+        expect(webBookmarksElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'web-bookmarks:toggle');
+        expect(webBookmarksElement).not.toBeVisible();
       });
     });
   });

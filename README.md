@@ -1,6 +1,6 @@
-# Raul Bookmarks package
+# Web Bookmarks package
 
-Raul Bookmarks is a packages that allows you to create web bookmarks, organize them by folders and open those bookmarks directly in your default browser without having to open the browser first.
+Web Bookmarks is a packages that allows you to create web bookmarks, organize them by folders and open those bookmarks directly in your default browser without having to open the browser first.
 
 ## Usage
 
@@ -13,6 +13,6 @@ The way to edit or delete a bookmark or folder is by directly editing the json f
 The json file where the bookmarks are saved is created in the directory where the packages are installed by default.
 The name of the json file is **_atomBookmarks_**
 
-    ../.atom/packages/raul-bookmarks/atomBookmarks.json
+    ../.atom/packages/Web-bookmarks/atomBookmarks.json
 
 ![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)

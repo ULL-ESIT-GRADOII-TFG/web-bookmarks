@@ -2,15 +2,15 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "raul-bookmarks",
+        "label": "web-bookmarks",
         "submenu": [
           {
             "label": "Toggle",
-            "command": "raul-bookmarks:toggle"
+            "command": "web-bookmarks:toggle"
           },
           {
             "label": "Edit/Delete Bookmarks",
-            "command": "raul-bookmarks:edit-bookmarks"
+            "command": "web-bookmarks:edit-bookmarks"
           }
         ]
       }
@@ -21,15 +21,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "raul-bookmarks",
+          "label": "web-bookmarks",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "raul-bookmarks:toggle"
+              "command": "web-bookmarks:toggle"
             },
             {
               "label": "Edit/Delete Bookmarks",
-              "command": "raul-bookmarks:edit-bookmarks"
+              "command": "web-bookmarks:edit-bookmarks"
             }
           ]
         }

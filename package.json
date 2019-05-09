@@ -1,7 +1,7 @@
 {
   "name": "web-bookmarks",
   "main": "./lib/web-bookmarks",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "This package allows you to create web bookmarks and organize them by folders and open those bookmarks directly in your default browser",
   "keywords": [],
   "activationCommands": {

@@ -2,7 +2,7 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Web-bookmarks",
+        "label": "Web bookmarks",
         "submenu": [
           {
             "label": "Toggle",
@@ -21,7 +21,7 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "Web-bookmarks",
+          "label": "Web bookmarks",
           "submenu": [
             {
               "label": "Toggle",
